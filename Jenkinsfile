@@ -20,13 +20,5 @@ pipeline {
                 '''
             }
         }
-        stage('Maintence application') {
-            steps {
-                sh '''
-                cd /opt/docker/app
-                docker compose down
-                '''
-            }
-        }
     }
 }
