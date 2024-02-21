@@ -20,5 +20,9 @@ pipeline {
                 '''
             }
         }
+        stage('Maintence application')
+            steps {
+                sh 'docker compose down'
+            }
     }
 }
