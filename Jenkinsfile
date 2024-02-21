@@ -20,9 +20,10 @@ pipeline {
                 '''
             }
         }
-        stage('Maintence application')
+        stage('Maintence application') {
             steps {
                 sh 'docker compose down'
             }
+        }
     }
 }
